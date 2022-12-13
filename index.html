@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook with JWT</title>
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+    <!-- Facebook Login Area Start -->
+    <section id="login">
+        <div class="container">
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <img src="./src/images/facebook.svg" alt="">
+                </div>
+                <div class="slogan">
+                    <h2>Facebook helps you connect and share with the people in your life.</h2>
+                </div>
+            </div>
+
+            <div class="formbox-wrapper">
+                <div class="form-box">
+                    <div class="login-area">
+                        <form action="/login" method="POST">
+                            <div class="input-wrapper">
+                                <input type="email" name="emai" placeholder="Email address or phone number">
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="password" name="password" placeholder="Password">
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="submit" value="Log in">
+                            </div>
+                        </form>
+                        <div class="forgot-pass">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="new-btn">
+                        <a href="#">Create New Account</a>
+                    </div>
+                </div>
+                <div class="create-page">
+                    <p><a href="#">Create a Page</a> for a celebrity, brand or business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Facebook Login Area End -->
+
+    <!-- Facebook Login Footer Area Start -->
+    <footer id="login-footer">
+        <div class="container">
+            <div class="top-sec">
+                <span>Enlish(UK)</span>
+                <a href="#">বাংলা</a>
+                <a href="#">অসমীয়া</a>
+                <a href="#">हिन्दी</a>
+                <a href="#">नेपाली</a>
+                <a href="#">Bahasa Indonesia</a>
+                <a href="#">العربية</a>
+                <a href="#">中文(简体)</a>
+                <a href="#">Bahasa Melayu</a>
+                <a href="#">Español</a>
+                <a href="#">Português (Brasil)</a>
+                <a href="#">Bahasa Melayu</a>
+                <a class="plus-btn" href="#"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="bottom-sec">
+                <a href="#">Sign Up</a>
+                <a href="#">Log in</a>
+                <a href="#">Messenger</a>
+                <a href="#">Facebook Lite</a>
+                <a href="#">Watch</a>
+                <a href="#">Places</a>
+                <a href="#">Games</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Meta Pay</a>
+                <a href="#">Oculus</a>
+                <a href="#">Portal</a>
+                <a href="#">Instagram</a>
+                <a href="#">Bulletin</a>
+                <a href="#">Fundraisers</a>
+                <a href="#">Services</a>
+                <a href="#">Voting Information Centre</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Privacy Centre</a>
+                <a href="#">Groups</a>
+                <a href="#">About</a>
+                <a href="#">Create ad</a>
+                <a href="#">Create Page</a>
+                <a href="#">Developers</a>
+                <a href="#">Careers</a>
+                <a href="#">Cookies</a>
+                <a href="#">AdChoices <i class="fa-solid fa-play"></i></a>
+                <a href="#">Terms</a>
+                <a href="#">Help</a>
+                <a href="#">Contact uploading and non-users</a>
+            </div>
+            <div class="copyright">
+                <p>Meta © 2022</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Facebook Login Footer Area End -->
+
+
+    <!-- Sign Up Design Start -->
+    <section id="sign-up">
+        <div class="signup-container">
+            <div class="signup-form-box-wrapper">
+                <div class="form-top-bar">
+                    <div class="text">
+                        <h2>Sign Up</h2>
+                        <h5>It's quick and easy</h5>
+                    </div>
+                    <div class="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <form action="/sing-up" method="POST">
+                        <div class="input-field">
+                            <input type="text" name="first_name" placeholder="First name">
+                            <input type="text" name="surname" placeholder="Surname">
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" placeholder="Email address">
+                        </div>
+                        <div class="input-field">
+                            <input type="password" name="password" placeholder="New Password">
+                        </div>
+                        <div class="select-field">
+                            <label>Date of birth <i class="fa-sharp fa-solid fa-circle-question"></i></label>
+                            <div class="fields">
+                                <select name="birth_date" id="birth_date">
+                                    <option value="">Day</option>
+                                </select>
+                                <select name="birth_month" id="birth_month">
+                                    <option value="">Month</option>
+                                </select>
+                                <select name="birth_year" id="birth_year">
+                                    <option value="">Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="gender-field">
+                            <label>Gender <i class="fa-sharp fa-solid fa-circle-question"></i></label>
+                            <div class="fields">
+                                <label for="female">
+                                    Female <input value="Female" type="radio" name="gender" id="female">
+                                </label>
+                                <label for="male">
+                                    Male <input value="Male" type="radio" name="gender" id="male">
+                                </label>
+                                <label for="custom">
+                                    Custom <input value="Custom" type="radio" name="gender" id="custom">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="terms">
+                            <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.</p>
+                            
+                            <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+                        </div>
+                        <div class="submit-btn">
+                            <input type="submit" value="Sign Up">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sign Up Design End -->
+    
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
