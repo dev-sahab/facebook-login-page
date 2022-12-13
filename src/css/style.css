@@ -62,13 +62,13 @@ img {
     width: 396px;
 }
 #login .form-box {
-    margin-top: 40px;
-    padding: 10px 0 24px;
-    background: #fff;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 20px 4px rgba(0,0,0, .1), 0, 8px, 16px rgba(0,0,0, .1);
-    width : 396px;
+	margin-top: 40px;
+	padding: 10px 0 24px;
+	background: #fff;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0, .1), 0 8px 16px rgba( 0, 0, 0, 0.1);
+	width: 396px;
 }
 #login .form-box .input-wrapper{
     margin: auto;
@@ -216,6 +216,10 @@ img {
     margin: auto;
     background: #fff;
     border-radius: 6px;
+}
+.signup-form-box-wrapper {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+	border-radius: 10px;
 }
 #sign-up .signup-container .form-top-bar {
     padding: 10px 16px;
